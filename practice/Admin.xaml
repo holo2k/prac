@@ -1,0 +1,15 @@
+﻿<Window x:Class="practice.Admin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:practice"
+        mc:Ignorable="d"
+        Title="Администратор" Height="252.484" Width="303.417" Background="#FF009FDA" ResizeMode="NoResize">
+    <Grid>
+        <Button x:Name="btnUsers" Content="Пользователи" Margin="28,152,30,21" Height="50"/>
+        <Button x:Name="btnProduction" Content="Продукция" Margin="28,85,30,88" Height="50"/>
+        <Button x:Name="btnPrices" Content="Цены" Margin="28,20,30,153" Height="50"/>
+
+    </Grid>
+</Window>

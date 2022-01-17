@@ -1,0 +1,16 @@
+﻿<Window x:Class="practice.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:practice"
+        mc:Ignorable="d"
+        Title="Главное окно" Height="271.118" Width="350" Background="#FF009FDA" ResizeMode="NoResize">
+    <Grid Margin="0,0,0,-1">
+        <Label x:Name="lblRole" Margin="62,10,59,198" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" Height="35" Width="223"/>
+        <Button x:Name="btnAdmin" Content="Администратор" Margin="32,164,30,42" Click="BtnAdmin_Click"></Button>
+        <Button x:Name="btnProduction" Content="Продукция" Margin="32,107,30,99"/>
+        <Button x:Name="btnSales" Content="Продажи" Margin="32,50,30,156"/>
+        <Label x:Name="lblGoBack" Content="Назад"  Margin="-11,0,273,198" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" MouseDown="LblGoBack_MouseDown" MouseEnter="LblGoBack_MouseEnter" MouseLeave="LblGoBack_MouseLeave"/>
+    </Grid>
+</Window>

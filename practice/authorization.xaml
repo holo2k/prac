@@ -1,0 +1,24 @@
+﻿<Window x:Class="practice.authorizaiton"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:practice"
+        mc:Ignorable="d"
+        Title="Авторизация" Height="450" Width="800" Background="#FF009FDA" ResizeMode="NoResize" >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="109*"/>
+            <ColumnDefinition Width="683*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btnConnect" Content="Войти"  HorizontalAlignment="Left" FontSize="20" Margin="163.267,267,0,0" VerticalAlignment="Top" Width="246" Height="42" Background="#FF004165" Click="btnConnect_Click" Grid.Column="1" Foreground="#FF009FDA"/>
+        <TextBox FontSize="20" x:Name="tbLogin" HorizontalAlignment="Left" Height="32" Margin="113.267,125,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="360" Grid.Column="1"/>
+        <TextBox FontSize="20" x:Name="tbPassword" HorizontalAlignment="Left" Height="33" Margin="113.267,193,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="360" Grid.Column="1"/>
+        <Label Content="Логин:"  FontSize="20" HorizontalAlignment="Left" Margin="38,120,0,0" VerticalAlignment="Top" Grid.Column="1" Background="{x:Null}" Foreground="#FF004165"/>
+        <Label Content="Пароль:"  FontSize="20" HorizontalAlignment="Left" Margin="25,193,0,0" VerticalAlignment="Top" Grid.Column="1" Foreground="#FF004165"/>
+        <Label x:Name="lblRegister" Content="зарегистрироваться" Foreground="#FF004165" FontStyle="Italic" FontSize="15" HorizontalAlignment="Left" Margin="207,314,0,0" VerticalAlignment="Top" Grid.Column="1" MouseDown="LblRegister_MouseDown" MouseEnter="LblRegister_MouseEnter" MouseLeave="LblRegister_MouseLeave"/>
+        <Label x:Name="lblClose" Content="x" Foreground="#FF004165"  FontSize="20" HorizontalAlignment="Left" Margin="663,0,0,0" VerticalAlignment="Top" Grid.Column="1"  MouseEnter="LblClose_MouseEnter" MouseDown="LblClose_MouseDown" MouseLeave="LblClose_MouseLeave"/>
+        <Label x:Name="lblTime" Content="" Foreground="#FF004165" FontSize="15" HorizontalAlignment="Center" Margin="189,227,293,159" VerticalAlignment="Center" Grid.Column="1" Width="203" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="35"/>
+
+    </Grid>
+</Window>

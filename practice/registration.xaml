@@ -1,0 +1,18 @@
+﻿<Window x:Class="practice.registration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:practice"
+        mc:Ignorable="d"
+        Title="Регистрация" Height="450" Width="800"  Background="#FF009FDA" ResizeMode="NoResize" >
+    <Grid>
+        <Button x:Name="btnConnect" Content="Зарегистрироваться"  HorizontalAlignment="Left" FontSize="20" Margin="273.267,267,0,0" VerticalAlignment="Top" Width="246" Height="42" Background="#FF004165" Click="btnConnect_Click" Foreground="#FF009FDA"/>
+        <TextBox FontSize="20" x:Name="tbLogin" HorizontalAlignment="Left" Height="32" Margin="223.267,125,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="360"/>
+        <TextBox FontSize="20" x:Name="tbPassword" HorizontalAlignment="Left" Height="33" Margin="223.267,193,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="360"/>
+        <Label Content="Логин:"  FontSize="20" HorizontalAlignment="Left" Margin="148,120,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="#FF004165"/>
+        <Label Content="Пароль:"  FontSize="20" HorizontalAlignment="Left" Margin="135,193,0,0" VerticalAlignment="Top" Foreground="#FF004165"/>
+        <Label x:Name="lblBack" Content="назад" Foreground="#FF004165" FontStyle="Italic" FontSize="15" HorizontalAlignment="Left" Margin="375,309,0,0" VerticalAlignment="Top" MouseDown="LblBack_MouseDown" MouseEnter="LblBack_MouseEnter" MouseLeave="LblBack_MouseLeave"/>
+
+    </Grid>
+</Window>
